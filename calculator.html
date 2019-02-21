@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>calc</title>
+</head>
+<body>
+<h1>CALCULATOR</h1>
+<input type="number" id="input1">
+<input type="number" id="input2">
+<button onclick="plus()"> + </button>
+<button onclick="minus()"> - </button>
+<button onclick="mltp()"> x </button>
+<button onclick="dvd()"> / </button>
+<script>
+    function plus() {
+        var x = parseInt(document.getElementById("input1").value);
+        var y = parseInt(document.getElementById("input2").value);
+        alert("= " + (x+y));
+    }
+    function minus() {
+        var x = parseInt(document.getElementById("input1").value);
+        var y = parseInt(document.getElementById("input2").value);
+        alert("= " + (x-y));
+    }
+    function mltp() {
+        var x = parseInt(document.getElementById("input1").value);
+        var y = parseInt(document.getElementById("input2").value);
+        alert("= " + (x*y));
+    }
+    function dvd() {
+        var x = parseInt(document.getElementById("input1").value);
+        var y = parseInt(document.getElementById("input2").value);
+        alert("= " + (x/y));
+    }
+</script>
+</body>
+</html>
